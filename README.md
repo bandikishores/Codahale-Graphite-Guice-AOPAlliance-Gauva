@@ -1,4 +1,4 @@
-# Graphite-AOPAlliance
+# Codahale-Graphite-AOPAlliance-Gauva
 1) Using graphite to check time taken by methods. <br/>
 2) AOPAlliance to intercept the method to perform Automatic logging and monitoring. <br/>
 3) Uses Gauva Cache to save and retrieve the value. <br/>
