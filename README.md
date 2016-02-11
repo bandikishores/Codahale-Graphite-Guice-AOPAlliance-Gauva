@@ -1,7 +1,7 @@
 # Graphite-AOPAlliance
-1) Using graphite to check time taken by methods 
-2) AOPAlliance to intercept the method to perform Automatic logging and monitoring.
-3) Uses Gauva Cache to save and retrieve the value
+1) Using graphite to check time taken by methods. <br/>
+2) AOPAlliance to intercept the method to perform Automatic logging and monitoring. <br/>
+3) Uses Gauva Cache to save and retrieve the value. <br/>
 
 Graphite is a tool responsible for sending Metrics about APIs to another server for analysis. Can formulate the percentiles such as 99th percentile, occurances over a period of time.
 1) It uses Carbon internally to process requests.
