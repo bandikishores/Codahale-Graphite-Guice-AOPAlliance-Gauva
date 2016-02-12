@@ -24,13 +24,17 @@ For Configuring Graphite Server in local Follow steps at
 2) https://www.digitalocean.com/community/tutorials/how-to-install-and-use-graphite-on-an-ubuntu-14-04-server
 
 Once installed, 
-1) You can bring up the server by using
+1) You can bring up (carbon) the listener which publishes data to graphite server by using
   sudo service carbon-cache start
     or 
   sudo service carbon-cache stop (To Stop)
     or
   sudo service carbon-cache status (For Status)
-2) the graphite web can be accessed at http://localhost/
+2) To bring up graphite web server
+  sudo service apache2 start
+    or
+  sudo service apache2 reload
+3) the graphite web can be accessed at http://localhost/
 
 
 
