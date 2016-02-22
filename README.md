@@ -4,13 +4,15 @@
 3. Uses Gauva Cache to save and retrieve the value. <br/><br/>
 
 Graphite is a tool responsible for sending Metrics about APIs to another server for analysis. Can formulate the percentiles such as 99th percentile, occurances over a period of time.<br/>
-1. It uses Carbon internally to process requests.<br/>
+ 1. It uses Carbon internally to process requests.<br/>
    Carbon has 3 states.<br/>
-      i. agent - Which accepts the request.<br/>
-      ii. cache - Which caches the request.<br/>
-      iii. persistor - Which collects all the data and pushes them to Whisper time-to-time. <br/>
-      (MoreInfo : http://graphite.wikidot.com/carbon)<br/>
-2. Whisper - is a database library, which reads the data from carbon and writes it to DB.<br/><br/>
+  * agent - Which accepts the request.<br/>
+  * cache - Which caches the request.<br/>
+  * persistor - Which collects all the data and pushes them to Whisper time-to-time. <br/>
+      [MoreInfo](http://graphite.wikidot.com/carbon)<br/>
+
+
+ 2. Whisper - is a database library, which reads the data from carbon and writes it to DB.<br/><br/>
 
 1. Graphite makes use of Timer, Histogram, Meter to mark the time taken, history and number of times the method was hit.<br/>
 GraphiteReporter sends this report to Graphite server.<br/>
@@ -31,12 +33,11 @@ Once installed, <br/>
  <code> sudo service carbon-cache stop (To Stop)  </code><br/>
   <code>  or  </code><br/>
   <code> sudo service carbon-cache status (For Status) </code><br/>
- 
 2. To bring up graphite web server<br/>
-  <code>sudo service apache2 start</code><br/>
+  <code>sudo service apache2 start </code><br/>
   <code>  or</code><br/>
- <code> sudo service apache2 reload</code><br/>
-3. the graphite web can be accessed at http://localhost/<br/><br/><br/>
+  <code> sudo service apache2 reload </code><br/>
+3. The graphite web can be accessed at http://localhost/<br/><br/><br/>
 
 
 
